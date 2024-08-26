@@ -13,6 +13,6 @@ You can install the package using pip...or not (that's the purpose!):
 
 
 ```bash
-pip install gryszka_hello_package
-pip install gryszka_another_package
+pip install gryszka-hello-package
+pip install gryszka-another-package
 ```

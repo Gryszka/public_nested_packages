@@ -1,5 +1,6 @@
 build/
 dist/
-gryszkapackage.egg-info
+gryszka_another_package.egg-info/
+gryszka_hello_package.egg-info/
 notes.md
 __pycache__/
