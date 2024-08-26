@@ -1,0 +1,5 @@
+build/
+dist/
+gryszkapackage.egg-info
+notes.md
+__pycache__/
