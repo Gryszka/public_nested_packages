@@ -7,12 +7,12 @@ VERSION = '0.1.0'
 PACKAGE_NAME = 'gryszka_hello_package'
 AUTHOR = 'Gryszka'
 AUTHOR_EMAIL = 'romanowicz.g@gmail.com'
-URL = 'https://github.com/Gryszka/public_nested_packages/gryszka_hello_package'
+URL = 'https://github.com/Gryszka/public_nested_packages/src/gryszka_hello_package'
 LICENSE = 'Apache License 2.0'
 DESCRIPTION = 'Testing WHL purpose. Hello World'
 LONG_DESCRIPTION = (HERE / "README.md").read_text()
 LONG_DESC_TYPE = "text/markdown"
-INSTALL_REQUIRES = []
+INSTALL_REQUIRES = ['gryszka_another_package']
 CLASSIFIERS = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: Apache Software License",
@@ -33,5 +33,6 @@ setup(
     install_requires=INSTALL_REQUIRES,
     classifiers=CLASSIFIERS,
     keywords=KEYWORDS,
-    packages=find_packages()
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'}
 )
