@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.1.0'
+VERSION = '0.1.3'
 PACKAGE_NAME = 'gryszka_another_package'
 AUTHOR = 'Gryszka'
 AUTHOR_EMAIL = 'romanowicz.g@gmail.com'
@@ -13,6 +13,8 @@ LICENSE = 'Apache License 2.0'
 DESCRIPTION = 'Testing WHL purpose. another Hello World'
 LONG_DESCRIPTION = (HERE / "README.md").read_text()
 LONG_DESC_TYPE = "text/markdown"
+# INSTALL_REQUIRES = ['gryszka_hello_package>=0.1.2<1.0.0']
+# INSTALL_REQUIRES = ['gryszka_hello_package>=0.1.2']
 INSTALL_REQUIRES = ['gryszka_hello_package']
 CLASSIFIERS = [
     "Programming Language :: Python :: 3",
